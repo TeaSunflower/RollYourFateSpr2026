@@ -48,7 +48,7 @@ public class GameLoop : MonoBehaviour
             currentEvent = eventPool.GetRandomEvent();
             itemUsed = false;
 
-            Console.WriteLine(currentEvent.Description);
+            Debug.Log(currentEvent.Description);
             Console.WriteLine();
 
             Console.WriteLine(menuPrompt);
