@@ -9,8 +9,26 @@ namespace ConsoleVersionRYFGJ
     internal class Inventory
     {
         // Fields
-        private List<Item> itemStorage = new List<Item>();
-        private int storageCount = 0;
+        private List<Item> itemStorage;
+        private int storageCount;
+
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        public Inventory()
+        {
+            itemStorage = new List<Item>();
+            storageCount = 0;
+        }
+
+        public Inventory(List<Item> starterSet)
+        {
+            itemStorage = new List<Item>();
+            for(int i = 0; i < starterSet.Count; i++)
+            {
+                AddItem(starterSet[i]);
+            }
+        }
 
         /// <summary>
         /// Adds an item to the inventory
