@@ -67,6 +67,7 @@ namespace ConsoleVersionRYFGJ
                         {
                             newEvent.AddToReward(new Item(parsedEvent[i], int.Parse(parsedEvent[i + 1]), int.Parse(parsedEvent[i + 2]), int.Parse(parsedEvent[i + 3])));
                         }
+                        events.Add(newEvent);
                     }
                 }
                 while (reader.Peek() != -1);

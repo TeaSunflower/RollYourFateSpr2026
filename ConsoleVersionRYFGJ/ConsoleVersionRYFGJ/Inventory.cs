@@ -44,17 +44,17 @@ namespace ConsoleVersionRYFGJ
         /// Seaches the inventory for the first instance of an item
         /// </summary>
         /// <param name="item"> Item to be found </param>
-        public Item SearchItem(Item item)
+        public Item SearchItem(string itemName)
         {
             for(int i = 0; i < storageCount; i++)
             {
-                if (item.Name == itemStorage[i].Name)
+                if (itemName.ToLower() == itemStorage[i].Name.ToLower())
                 {
                     return itemStorage[i];
                 }
             }
 
-            return itemStorage[0];
+            return new Item("null", 0, 0, 0);
         }
 
         /// <summary>
