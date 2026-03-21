@@ -9,6 +9,7 @@ namespace ConsoleVersionRYFGJ
 {
     internal class EventList
     {
+        private Random rng;
         private List<Event> events;
         public EventList()
         {
@@ -21,6 +22,7 @@ namespace ConsoleVersionRYFGJ
         /// </summary>
         private void GetEvents()
         {
+            rng = new Random();
             StreamReader reader = new StreamReader("../../../Events.txt");
 
             try
@@ -76,6 +78,12 @@ namespace ConsoleVersionRYFGJ
             {
                 reader.Close();
             }
+        }
+
+        // Obtain a random Event from the event pool
+        public Event GetRandomEvent()
+        {
+            return events[rng.Next() % events.Count];
         }
     }
 }
