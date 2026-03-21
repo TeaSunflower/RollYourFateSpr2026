@@ -62,8 +62,13 @@ public class Inventory
         storageCount--;
     }
 
-    public List<Item> ReturnItemList()
+    public string ReturnItemList()
     {
-        return itemStorage;
+        string inventoryListNames = "Inventory:";
+        for (int i = 0; i < itemStorage.Count; i++)
+        {
+            inventoryListNames += "\n - " + itemStorage[i].Name;
+        }
+        return inventoryListNames;
     }
 }
