@@ -11,8 +11,10 @@ namespace ConsoleVersionRYFGJ
     {
         private Random rng;
         private List<Event> events;
+        
         public EventList()
         {
+            rng = new Random();
             events = new List<Event>();
             GetEvents();
         }
@@ -22,7 +24,6 @@ namespace ConsoleVersionRYFGJ
         /// </summary>
         private void GetEvents()
         {
-            rng = new Random();
             StreamReader reader = new StreamReader("../../../Events.txt");
 
             try
@@ -59,10 +60,10 @@ namespace ConsoleVersionRYFGJ
 
                         // Get Info from list
                         // Add new Event
-                        Event newEvent = new Event(int.Parse(parsedEvent[1]), int.Parse(parsedEvent[2]), int.Parse(parsedEvent[3]), parsedEvent[0]);
+                        Event newEvent = new Event(int.Parse(parsedEvent[2]), int.Parse(parsedEvent[3]), int.Parse(parsedEvent[4]), parsedEvent[0], parsedEvent[1]);
 
                         // Add rewards to event
-                        for(int i = 4; i < parsedEvent.Count; i += 4)
+                        for(int i = 5; i < parsedEvent.Count; i += 4)
                         {
                             newEvent.AddToReward(new Item(parsedEvent[i], int.Parse(parsedEvent[i + 1]), int.Parse(parsedEvent[i + 2]), int.Parse(parsedEvent[i + 3])));
                         }

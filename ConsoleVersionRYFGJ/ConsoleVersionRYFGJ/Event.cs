@@ -9,6 +9,7 @@ namespace ConsoleVersionRYFGJ
     internal class Event
     {
         private string description;
+        private string winText;
         private Item requiredStats;
         private List<Item> rewardItems;
 
@@ -22,11 +23,12 @@ namespace ConsoleVersionRYFGJ
             get { return requiredStats; }
         }
 
-        public Event(int _requiredDamage, int _requiredBlock, int _requiredMagic, string _description)
+        public Event(int _requiredDamage, int _requiredBlock, int _requiredMagic, string _description, string _winText)
         {
             requiredStats = new Item(_requiredDamage, _requiredBlock, _requiredMagic);
             rewardItems = new List<Item>();
             description = _description;
+            winText = _winText;
         }
 
         /// <summary>
