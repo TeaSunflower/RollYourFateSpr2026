@@ -18,6 +18,11 @@ namespace ConsoleVersionRYFGJ
             get { return description; }
         }
 
+        public string WinText
+        {
+            get { return winText; }
+        }
+
         public Item RequiredStats
         {
             get { return requiredStats; }
