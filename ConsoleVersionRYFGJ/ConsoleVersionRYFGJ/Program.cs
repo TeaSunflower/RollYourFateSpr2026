@@ -48,7 +48,7 @@ namespace ConsoleVersionRYFGJ
                     switch(command.ToLower())
                     {
                         case "inventory":
-                            inventory.PrintItemList();
+                            inventory.ReturnItemList();
                             Console.WriteLine();
                             break;
 

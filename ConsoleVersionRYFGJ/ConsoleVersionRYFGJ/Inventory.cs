@@ -67,13 +67,9 @@ namespace ConsoleVersionRYFGJ
             storageCount--;
         }
 
-        public void PrintItemList()
+        public List<Item> ReturnItemList()
         {
-            Console.WriteLine("Inventory:");
-            for (int i = 0; i < storageCount; i++)
-            {
-                Console.WriteLine(itemStorage[i].Name);
-            }
+            return itemStorage;
         }
     }
 }
