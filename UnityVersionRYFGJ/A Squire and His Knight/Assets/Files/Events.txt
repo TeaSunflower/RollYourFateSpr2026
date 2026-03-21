@@ -1,0 +1,6 @@
+# Use This Format: 
+# Should support unlimited reward items
+# EventDesc|EventWinText|DamageReq|BlockReq|MagicReq|Item1Desc|Item1Damage|Item1Block|Item1Magic|Item2Desc|...
+Test Damage Event|You Win!|1|4|4|Test Damage Reward|3|1|0
+Test Block Event|You Win!|4|1|4|Test Block Reward|0|3|1
+Test Magic Event|You Win!|4|4|1|Test Magic Reward|1|0|3

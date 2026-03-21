@@ -18,7 +18,7 @@ public class EventList
     /// </summary>
     private void GetEvents()
     {
-        StreamReader reader = new StreamReader("../../../Events.txt");
+        StreamReader reader = new StreamReader("Assets/Files/Events.txt");
 
         try
         {
