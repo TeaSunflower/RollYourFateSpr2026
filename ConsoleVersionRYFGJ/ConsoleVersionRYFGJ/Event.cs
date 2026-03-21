@@ -6,25 +6,51 @@ using System.Threading.Tasks;
 
 namespace ConsoleVersionRYFGJ
 {
-    internal struct Event
+    internal class Event
     {
+        private string description;
         private Item requiredStats;
-        private Item rewardItem;
+        private List<Item> rewardItems;
+
+        public string Description
+        {
+            get { return description; }
+        }
 
         public Item RequiredStats
         {
             get { return requiredStats; }
         }
 
-        public Item RewardItem
-        {
-            get { return rewardItem; }
-        }
-
-        public Event(int _requiredDamage, int _requiredBlock, int _requiredMagic, string _rewardItemName, int _rewardItemDamage, int _rewardItemBlock, int _rewardItemMagic)
+        public Event(int _requiredDamage, int _requiredBlock, int _requiredMagic, string _description)
         {
             requiredStats = new Item(_requiredDamage, _requiredBlock, _requiredMagic);
-            rewardItem = new Item(_rewardItemName, _rewardItemDamage, _rewardItemBlock, _rewardItemBlock);
+            rewardItems = new List<Item>();
+            description = _description;
+        }
+
+        /// <summary>
+        /// Adds reward to the reward pool of the Event
+        /// </summary>
+        /// <param name="_rewardItem">Item being added to the event pool</param>
+        public void AddToReward(Item _rewardItem)
+        {
+            rewardItems.Add(_rewardItem);
+        }
+
+        /// <summary>
+        /// Obtains the reward Items in an array
+        /// </summary>
+        /// <returns>Array of the reward Items</returns>
+        public Item[] GetRewardItems()
+        {
+            Item[] itemList = new Item[rewardItems.Count];
+            for(int i = 0; i < itemList.Length; i++)
+            {
+                itemList[i] = rewardItems[i];
+            }
+
+            return itemList;
         }
     }
 }
