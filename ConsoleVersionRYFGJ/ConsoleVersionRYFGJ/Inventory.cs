@@ -66,5 +66,14 @@ namespace ConsoleVersionRYFGJ
             itemStorage.Remove(item);
             storageCount--;
         }
+
+        public void PrintItemList()
+        {
+            Console.WriteLine("Inventory:");
+            for (int i = 0; i < storageCount; i++)
+            {
+                Console.WriteLine(itemStorage[i].Name);
+            }
+        }
     }
 }
