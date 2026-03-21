@@ -21,7 +21,7 @@ namespace ConsoleVersionRYFGJ
         /// </summary>
         private void GetEvents()
         {
-            StreamReader reader = new StreamReader("/Events.txt");
+            StreamReader reader = new StreamReader("../../../Events.txt");
 
             try
             {
@@ -35,17 +35,24 @@ namespace ConsoleVersionRYFGJ
 
                         List<string> parsedEvent = new List<string>();
 
-                        int indexOfBreakCharacter = eventInfo.IndexOf('|');
+                        int indexOfBreakCharacter = 0;
                         while (indexOfBreakCharacter != -1)
                         {
-                            // Put information into string list
-                            parsedEvent.Add(eventInfo.Substring(0, indexOfBreakCharacter - 1));
-
-                            // Delete from original string
-                            eventInfo = eventInfo.Substring(indexOfBreakCharacter + 1, eventInfo.Length - 1);
-
                             // Obtain next index
                             indexOfBreakCharacter = eventInfo.IndexOf('|');
+
+                            // Put information into string list
+                            if(indexOfBreakCharacter != -1)
+                            {
+                                parsedEvent.Add(eventInfo.Substring(0, indexOfBreakCharacter));
+                                // Delete from original string
+                                eventInfo = eventInfo.Substring(indexOfBreakCharacter + 1, eventInfo.Length - indexOfBreakCharacter - 1);
+                            }
+                            // If last info from the string
+                            else
+                            {
+                                parsedEvent.Add(eventInfo);
+                            }
                         }
 
                         // Get Info from list
