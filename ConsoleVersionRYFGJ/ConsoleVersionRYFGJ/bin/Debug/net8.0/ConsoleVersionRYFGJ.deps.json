@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ConsoleVersionRYFGJ/1.0.0": {
+        "runtime": {
+          "ConsoleVersionRYFGJ.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleVersionRYFGJ/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
