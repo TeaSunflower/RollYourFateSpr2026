@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: -768340878785537977
     second: ShadowEnemy_0
+  - first:
+      213: -4191398461196570848
+    second: ShadowEnemy_1
+  - first:
+      213: -2446550434887095673
+    second: ShadowEnemy_2
+  - first:
+      213: -1678517689203858091
+    second: ShadowEnemy_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -155,10 +164,10 @@ TextureImporter:
       name: ShadowEnemy_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 5464
-        height: 4600
+        x: 1230
+        y: 2322
+        width: 993
+        height: 1238
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,6 +178,72 @@ TextureImporter:
       bones: []
       spriteID: 7489395aa0e4655f0800000000000000
       internalID: -768340878785537977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowEnemy_1
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 2318
+        width: 981
+        height: 1095
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f62487e4925d5c0800000000000000
+      internalID: -4191398461196570848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowEnemy_2
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 908
+        width: 1272
+        height: 1079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a2a73875b1c0ed0800000000000000
+      internalID: -2446550434887095673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowEnemy_3
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 885
+        width: 1155
+        height: 941
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5556bc90e05b4b8e0800000000000000
+      internalID: -1678517689203858091
       vertices: []
       indices: 
       edges: []
@@ -188,6 +263,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       ShadowEnemy_0: -768340878785537977
+      ShadowEnemy_1: -4191398461196570848
+      ShadowEnemy_2: -2446550434887095673
+      ShadowEnemy_3: -1678517689203858091
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

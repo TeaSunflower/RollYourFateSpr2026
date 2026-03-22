@@ -5,6 +5,54 @@ TextureImporter:
   - first:
       213: 8305035002018289386
     second: NerdyKnight_0
+  - first:
+      213: -3901691743599449179
+    second: NerdyKnight_1
+  - first:
+      213: 613941973829775057
+    second: NerdyKnight_2
+  - first:
+      213: 224057846991442193
+    second: NerdyKnight_3
+  - first:
+      213: 1083777581602542684
+    second: NerdyKnight_4
+  - first:
+      213: 2968512778784616670
+    second: NerdyKnight_5
+  - first:
+      213: 3116959945618925662
+    second: NerdyKnight_6
+  - first:
+      213: -367574865888956197
+    second: NerdyKnight_7
+  - first:
+      213: -2522815671917244285
+    second: NerdyKnight_8
+  - first:
+      213: -2578238970604687952
+    second: NerdyKnight_9
+  - first:
+      213: -1200680032688381
+    second: NerdyKnight_10
+  - first:
+      213: 772918724298608817
+    second: NerdyKnight_11
+  - first:
+      213: -8042457015384160164
+    second: NerdyKnight_12
+  - first:
+      213: 5134838824809689544
+    second: NerdyKnight_13
+  - first:
+      213: -3560685504647065338
+    second: NerdyKnight_14
+  - first:
+      213: 8470844076942687315
+    second: NerdyKnight_15
+  - first:
+      213: 4940821944592786929
+    second: NerdyKnight_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +120,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -155,12 +203,12 @@ TextureImporter:
       name: NerdyKnight_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 5464
-        height: 4600
+        x: 530
+        y: 2773
+        width: 514
+        height: 991
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -173,11 +221,187 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: NerdyKnight_1
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 2798
+        width: 621
+        height: 961
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab2eaff7086ad9c0800000000000000
+      internalID: -3901691743599449179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NerdyKnight_2
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 2817
+        width: 644
+        height: 984
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de63dee8f8258800800000000000000
+      internalID: 613941973829775057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NerdyKnight_3
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2808
+        width: 798
+        height: 1089
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111501bbc630c1300800000000000000
+      internalID: 224057846991442193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NerdyKnight_4
+      rect:
+        serializedVersion: 2
+        x: 3748
+        y: 2853
+        width: 704
+        height: 1051
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5493f6e7f95a0f00800000000000000
+      internalID: 1083777581602542684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NerdyKnight_12
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1438
+        width: 672
+        height: 972
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58cdac84f3736090800000000000000
+      internalID: -8042457015384160164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NerdyKnight_14
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1455
+        width: 527
+        height: 1077
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60111aa1667e59ec0800000000000000
+      internalID: -3560685504647065338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NerdyKnight_15
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 1490
+        width: 648
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cf3e9becb7e8570800000000000000
+      internalID: 8470844076942687315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NerdyKnight_16
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 1504
+        width: 661
+        height: 986
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f568e98163519440800000000000000
+      internalID: 4940821944592786929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0cae9adf1e030d74ca0cf539572a0dab
     internalID: 0
     vertices: []
     indices: 
@@ -188,6 +412,22 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       NerdyKnight_0: 8305035002018289386
+      NerdyKnight_1: -3901691743599449179
+      NerdyKnight_10: -1200680032688381
+      NerdyKnight_11: 772918724298608817
+      NerdyKnight_12: -8042457015384160164
+      NerdyKnight_13: 5134838824809689544
+      NerdyKnight_14: -3560685504647065338
+      NerdyKnight_15: 8470844076942687315
+      NerdyKnight_16: 4940821944592786929
+      NerdyKnight_2: 613941973829775057
+      NerdyKnight_3: 224057846991442193
+      NerdyKnight_4: 1083777581602542684
+      NerdyKnight_5: 2968512778784616670
+      NerdyKnight_6: 3116959945618925662
+      NerdyKnight_7: -367574865888956197
+      NerdyKnight_8: -2522815671917244285
+      NerdyKnight_9: -2578238970604687952
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

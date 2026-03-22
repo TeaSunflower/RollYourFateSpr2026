@@ -5,6 +5,33 @@ TextureImporter:
   - first:
       213: -7368448966454986550
     second: SuaveSquire_0
+  - first:
+      213: -2862958706071117215
+    second: SuaveSquire_1
+  - first:
+      213: -262822804150397484
+    second: SuaveSquire_2
+  - first:
+      213: -1378625984058351121
+    second: SuaveSquire_3
+  - first:
+      213: 2511310058024270522
+    second: SuaveSquire_4
+  - first:
+      213: 6963108349718571926
+    second: SuaveSquire_5
+  - first:
+      213: 7403900432551376128
+    second: SuaveSquire_6
+  - first:
+      213: 1278030526854345831
+    second: SuaveSquire_7
+  - first:
+      213: -8930730560808097203
+    second: SuaveSquire_8
+  - first:
+      213: -1340140259311912940
+    second: SuaveSquire_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +99,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -155,12 +182,12 @@ TextureImporter:
       name: SuaveSquire_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 5464
-        height: 4600
+        x: 234
+        y: 2769
+        width: 1132
+        height: 1505
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -173,11 +200,143 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: SuaveSquire_1
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 2764
+        width: 1164
+        height: 1589
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162e406b93ab448d0800000000000000
+      internalID: -2862958706071117215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuaveSquire_2
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 2787
+        width: 1139
+        height: 1555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d55eb75d044a5cf0800000000000000
+      internalID: -262822804150397484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuaveSquire_4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1045
+        width: 1415
+        height: 1534
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abaf6693137f9d220800000000000000
+      internalID: 2511310058024270522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuaveSquire_5
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 1077
+        width: 772
+        height: 1482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b2885e62ee1a060800000000000000
+      internalID: 6963108349718571926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuaveSquire_7
+      rect:
+        serializedVersion: 2
+        x: 3018
+        y: 1095
+        width: 1091
+        height: 1499
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764324d2ef97cb110800000000000000
+      internalID: 1278030526854345831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuaveSquire_8
+      rect:
+        serializedVersion: 2
+        x: 4284
+        y: 1996
+        width: 857
+        height: 1584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4aee4a3fdbaf0480800000000000000
+      internalID: -8930730560808097203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c41ac35d30a592049851153ee0d86e7a
     internalID: 0
     vertices: []
     indices: 
@@ -188,6 +347,15 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       SuaveSquire_0: -7368448966454986550
+      SuaveSquire_1: -2862958706071117215
+      SuaveSquire_2: -262822804150397484
+      SuaveSquire_3: -1378625984058351121
+      SuaveSquire_4: 2511310058024270522
+      SuaveSquire_5: 6963108349718571926
+      SuaveSquire_6: 7403900432551376128
+      SuaveSquire_7: 1278030526854345831
+      SuaveSquire_8: -8930730560808097203
+      SuaveSquire_9: -1340140259311912940
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
