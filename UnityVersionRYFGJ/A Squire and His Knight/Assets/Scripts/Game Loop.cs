@@ -19,7 +19,28 @@ public class GameLoop : MonoBehaviour
 
     [SerializeField]
     Text displayText;
-    
+
+    [SerializeField]
+    SpriteRenderer knightSprite;
+
+    [SerializeField]
+    SpriteRenderer squireSprite;
+
+    [SerializeField]
+    SpriteRenderer enemySprite;
+
+    [SerializeField]
+    Sprite enemyDefeated;
+
+    [SerializeField]
+    Sprite enemyAttack;
+
+    [SerializeField]
+    Sprite enemyBlock;
+
+    [SerializeField]
+    Sprite enemyMagic;
+
     string menuPrompt = "Actions:" +
                 "\nPrompt - Display encounter description" +
                 "\nInventory - Display inventory" +
@@ -46,9 +67,9 @@ public class GameLoop : MonoBehaviour
     void Start()
     {
         command = "null";
-        
+
         displayText.text = "";
-        
+
         lvlComplete = 0;
         lose = false;
         displayPrinted = false;
@@ -65,8 +86,6 @@ public class GameLoop : MonoBehaviour
         eventPool = new EventList();
 
         currentEvent = eventPool.GetRandomEvent();
-
-        state = State.Command;
     }
 
     // Update is called once per frame
@@ -75,6 +94,20 @@ public class GameLoop : MonoBehaviour
         switch(state)
         {
             case State.Command:
+                // Set sprites based on event
+                if (currentEvent.RequiredStats.Damage < currentEvent.RequiredStats.Block && currentEvent.RequiredStats.Damage < currentEvent.RequiredStats.Magic)
+                {
+                    enemySprite.sprite = enemyAttack;
+                }
+                else if (currentEvent.RequiredStats.Block < currentEvent.RequiredStats.Magic)
+                {
+                    enemySprite.sprite = enemyBlock;
+                }
+                else
+                {
+                    enemySprite.sprite = enemyMagic;
+                }
+
                 itemUsed = false;
                 if(!displayPrinted && displayText.text == "")
                 {
@@ -171,6 +204,9 @@ public class GameLoop : MonoBehaviour
                 {
                     if (currentItem.Damage >= currentEvent.RequiredStats.Damage || currentItem.Block >= currentEvent.RequiredStats.Block || currentItem.Magic >= currentEvent.RequiredStats.Magic)
                     {
+                        // Set sprites
+                        enemySprite.sprite = enemyDefeated;
+
                         displayText.text += currentEvent.WinText + "\n\n";
                         Item[] rewards = currentEvent.GetRewardItems();
                         for (int i = 0; i < rewards.Count(); i++)

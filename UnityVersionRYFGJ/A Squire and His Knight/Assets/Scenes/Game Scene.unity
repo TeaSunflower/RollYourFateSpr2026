@@ -165,6 +165,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {fileID: 1009013085}
   displayText: {fileID: 1234360958}
+  knightSprite: {fileID: 1507416856}
+  squireSprite: {fileID: 1328636977}
+  enemySprite: {fileID: 1831700350}
+  enemyDefeated: {fileID: -1678517689203858091, guid: 8f94b3bb1519b8447a8615e1e2d46ade, type: 3}
+  enemyAttack: {fileID: -2446550434887095673, guid: 8f94b3bb1519b8447a8615e1e2d46ade, type: 3}
+  enemyBlock: {fileID: -768340878785537977, guid: 8f94b3bb1519b8447a8615e1e2d46ade, type: 3}
+  enemyMagic: {fileID: -4191398461196570848, guid: 8f94b3bb1519b8447a8615e1e2d46ade, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507416857}
   - component: {fileID: 1507416856}
+  - component: {fileID: 1507416858}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -1121,6 +1129,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1507416858
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507416855}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e01fe1734dcd5c94c9660b8024d8374a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1831700349
 GameObject:
   m_ObjectHideFlags: 0
