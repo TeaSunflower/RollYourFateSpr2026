@@ -18,7 +18,7 @@ public class EventList
     /// </summary>
     private void GetEvents()
     {
-        StreamReader reader = new StreamReader("Assets/Files/Events.txt");
+        StreamReader reader = new StreamReader("A Squire and His Knight_Data/Resources/Events.txt");
 
         try
         {
