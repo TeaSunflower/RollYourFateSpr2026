@@ -112,9 +112,9 @@ public class GameLoop : MonoBehaviour
 
         // Hardcoded starter set of items
         starterSet = new List<Item>();
-        starterSet.Add(new Item("Short Sword", 3, 1, 0));
-        starterSet.Add(new Item("Buckler", 0, 3, 1));
-        starterSet.Add(new Item("Magic Twig", 1, 0, 3));
+        starterSet.Add(new Item("Short Sword", 3, 0, 0));
+        starterSet.Add(new Item("Buckler", 0, 3, 0));
+        starterSet.Add(new Item("Magic Twig", 0, 0, 3));
 
         currentItem = new Item("null", 0, 0, 0);
 
