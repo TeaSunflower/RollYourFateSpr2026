@@ -53,6 +53,7 @@ public class GameLoop : MonoBehaviour
         lose = false;
         displayPrinted = false;
 
+        // Hardcoded starter set of items
         starterSet = new List<Item>();
         starterSet.Add(new Item("Short Sword", 3, 1, 0));
         starterSet.Add(new Item("Buckler", 0, 3, 1));
@@ -120,7 +121,7 @@ public class GameLoop : MonoBehaviour
                 
                 if (!displayPrinted && displayText.text == "")
                 {
-                    displayText.text = "What item would you like to use?\n\n" + inventory.ReturnItemList();
+                    displayText.text = "What item would you like to use?\n\n" + inventory.ReturnItemList() + "\n\nBack - Return to Action Menu";
 
                     displayPrinted = true;
                 }
@@ -128,9 +129,18 @@ public class GameLoop : MonoBehaviour
                 {
                     if (!displayPrinted)
                     {
-                        displayText.text += "\n\nWhat item would you like to use?\n\n" + inventory.ReturnItemList();
+                        displayText.text += "\n\nWhat item would you like to use?\n\n" + inventory.ReturnItemList() + "\n\nBack - Return to Action Menu";
                         displayPrinted = true;
                     }
+                }
+                
+                if (command.ToLower() == "back")
+                {
+                    displayText.text = "";
+                    state = State.Command;
+                    input.text = "";
+                    command = "null";
+                    displayPrinted = false;
                 }
                 
                 if(command != "null")
