@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 enum State
 {
+    Start,
     Command,
     Item,
-    Results,
-    Lose
+    Results
 }
 
 public class GameLoop : MonoBehaviour
@@ -126,6 +126,26 @@ public class GameLoop : MonoBehaviour
     {
         switch(state)
         {
+            case State.Start:
+                if (!displayPrinted)
+                {
+                    displayText.text = "Welcome, squire and knight. The two of you are about embark on a grand adventure (of no foreseeable end) " +
+                        "and this epic tale will surely accredit to correct person responsible for its success (it won't). Simply type the choice word for word " +
+                        "to select your action, hit the Enter key to submit, and your trusted knight will perform said action and then clumsly break whatever item you gave him to use. " +
+                        "Good luck, fair travelers, and hopefully you make it further than the starting line!" + "\n\nType anything to continue...";
+                    displayPrinted = true;
+                }
+
+                if(command != "null")
+                {
+                    displayText.text = "";
+                    input.text = "";
+                    command = "null";
+                    displayPrinted = false;
+                    state = State.Command;
+                }
+                break;
+            
             case State.Command:
                 // Set sprites based on event
                 if (currentEvent.RequiredStats.Damage < currentEvent.RequiredStats.Block && currentEvent.RequiredStats.Damage < currentEvent.RequiredStats.Magic)
