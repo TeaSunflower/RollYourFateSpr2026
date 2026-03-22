@@ -77,6 +77,9 @@ public class GameLoop : MonoBehaviour
     [SerializeField]
     Sprite squireMagic;
 
+    [SerializeField]
+    TextAsset eventsList;
+
     string menuPrompt = "Actions:" +
                 "\nPrompt - Display encounter description" +
                 "\nInventory - Display inventory" +
@@ -116,7 +119,8 @@ public class GameLoop : MonoBehaviour
         currentItem = new Item("null", 0, 0, 0);
 
         inventory = new Inventory(starterSet);
-        eventPool = new EventList();
+
+        eventPool = new EventList(eventsList);
 
         currentEvent = eventPool.GetRandomEvent();
     }

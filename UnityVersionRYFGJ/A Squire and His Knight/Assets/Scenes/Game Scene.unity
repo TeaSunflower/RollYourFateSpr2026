@@ -184,6 +184,7 @@ MonoBehaviour:
   squireAttack: {fileID: 2511310058024270522, guid: 8b35d28200e2cfc47b90a6d5ea16c10c, type: 3}
   squireBlock: {fileID: -2862958706071117215, guid: 8b35d28200e2cfc47b90a6d5ea16c10c, type: 3}
   squireMagic: {fileID: 1278030526854345831, guid: 8b35d28200e2cfc47b90a6d5ea16c10c, type: 3}
+  eventsList: {fileID: 4900000, guid: eab4d74cbd93c3046acb8d1db4c61611, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
