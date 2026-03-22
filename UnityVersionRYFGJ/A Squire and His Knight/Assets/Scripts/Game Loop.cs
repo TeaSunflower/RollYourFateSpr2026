@@ -246,12 +246,12 @@ public class GameLoop : MonoBehaviour
                         // Set sprites
                         enemySprite.sprite = enemyDefeated;
 
-                        if (currentEvent.RequiredStats.Damage < currentEvent.RequiredStats.Block && currentEvent.RequiredStats.Damage < currentEvent.RequiredStats.Magic)
+                        if (currentItem.Damage > currentItem.Block && currentItem.Damage > currentItem.Magic)
                         {
                             squireSprite.sprite = squireAttack;
                             knightSprite.sprite = knightAttack;
                         }
-                        else if (currentEvent.RequiredStats.Block < currentEvent.RequiredStats.Magic)
+                        else if (currentItem.Block < currentItem.Magic)
                         {
                             squireSprite.sprite = squireBlock;
                             knightSprite.sprite = knightBlock;
