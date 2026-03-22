@@ -172,6 +172,18 @@ MonoBehaviour:
   enemyAttack: {fileID: -2446550434887095673, guid: 8f94b3bb1519b8447a8615e1e2d46ade, type: 3}
   enemyBlock: {fileID: -768340878785537977, guid: 8f94b3bb1519b8447a8615e1e2d46ade, type: 3}
   enemyMagic: {fileID: -4191398461196570848, guid: 8f94b3bb1519b8447a8615e1e2d46ade, type: 3}
+  knightStart: {fileID: 8305035002018289386, guid: d74ed79d28c36a64fb4482a9f997c7ec, type: 3}
+  knightIdle: {fileID: -3901691743599449179, guid: d74ed79d28c36a64fb4482a9f997c7ec, type: 3}
+  knightAttack: {fileID: 613941973829775057, guid: d74ed79d28c36a64fb4482a9f997c7ec, type: 3}
+  knightBlock: {fileID: -8042457015384160164, guid: d74ed79d28c36a64fb4482a9f997c7ec, type: 3}
+  knightMagic: {fileID: -3560685504647065338, guid: d74ed79d28c36a64fb4482a9f997c7ec, type: 3}
+  knightDefeated: {fileID: 772918724298608817, guid: d74ed79d28c36a64fb4482a9f997c7ec, type: 3}
+  squireStart: {fileID: -7368448966454986550, guid: 8b35d28200e2cfc47b90a6d5ea16c10c, type: 3}
+  squireIdle: {fileID: 7403900432551376128, guid: 8b35d28200e2cfc47b90a6d5ea16c10c, type: 3}
+  squireDefeated: {fileID: -262822804150397484, guid: 8b35d28200e2cfc47b90a6d5ea16c10c, type: 3}
+  squireAttack: {fileID: 2511310058024270522, guid: 8b35d28200e2cfc47b90a6d5ea16c10c, type: 3}
+  squireBlock: {fileID: -2862958706071117215, guid: 8b35d28200e2cfc47b90a6d5ea16c10c, type: 3}
+  squireMagic: {fileID: 1278030526854345831, guid: 8b35d28200e2cfc47b90a6d5ea16c10c, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,7 +771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -768,10 +780,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1300,7 +1312,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4542613, g: 0.5773585, b: 0.45644173, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

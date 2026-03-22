@@ -41,6 +41,42 @@ public class GameLoop : MonoBehaviour
     [SerializeField]
     Sprite enemyMagic;
 
+    [SerializeField]
+    Sprite knightStart;
+
+    [SerializeField]
+    Sprite knightIdle;
+
+    [SerializeField]
+    Sprite knightAttack;
+
+    [SerializeField]
+    Sprite knightBlock;
+
+    [SerializeField]
+    Sprite knightMagic;
+
+    [SerializeField]
+    Sprite knightDefeated;
+
+    [SerializeField]
+    Sprite squireStart;
+
+    [SerializeField]
+    Sprite squireIdle;
+
+    [SerializeField]
+    Sprite squireDefeated;
+
+    [SerializeField]
+    Sprite squireAttack;
+
+    [SerializeField]
+    Sprite squireBlock;
+
+    [SerializeField]
+    Sprite squireMagic;
+
     string menuPrompt = "Actions:" +
                 "\nPrompt - Display encounter description" +
                 "\nInventory - Display inventory" +
@@ -107,6 +143,9 @@ public class GameLoop : MonoBehaviour
                 {
                     enemySprite.sprite = enemyMagic;
                 }
+
+                knightSprite.sprite = knightIdle;
+                squireSprite.sprite = squireIdle;
 
                 itemUsed = false;
                 if(!displayPrinted && displayText.text == "")
@@ -207,6 +246,22 @@ public class GameLoop : MonoBehaviour
                         // Set sprites
                         enemySprite.sprite = enemyDefeated;
 
+                        if (currentEvent.RequiredStats.Damage < currentEvent.RequiredStats.Block && currentEvent.RequiredStats.Damage < currentEvent.RequiredStats.Magic)
+                        {
+                            squireSprite.sprite = squireAttack;
+                            knightSprite.sprite = knightAttack;
+                        }
+                        else if (currentEvent.RequiredStats.Block < currentEvent.RequiredStats.Magic)
+                        {
+                            squireSprite.sprite = squireBlock;
+                            knightSprite.sprite = knightBlock;
+                        }
+                        else
+                        {
+                            squireSprite.sprite = squireMagic;
+                            knightSprite.sprite = knightMagic;
+                        }
+
                         displayText.text += currentEvent.WinText + "\n\n";
                         Item[] rewards = currentEvent.GetRewardItems();
                         for (int i = 0; i < rewards.Count(); i++)
@@ -223,6 +278,9 @@ public class GameLoop : MonoBehaviour
                     {
                         displayText.text += "GAME OVER\n\nEncounters Completed: " + lvlComplete;
                         displayPrinted = true;
+
+                        knightSprite.sprite = knightDefeated;
+                        squireSprite.sprite = squireDefeated;
                     }
                 }
 
