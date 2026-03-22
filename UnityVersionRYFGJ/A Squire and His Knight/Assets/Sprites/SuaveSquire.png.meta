@@ -26,12 +26,6 @@ TextureImporter:
   - first:
       213: 1278030526854345831
     second: SuaveSquire_7
-  - first:
-      213: -8930730560808097203
-    second: SuaveSquire_8
-  - first:
-      213: -1340140259311912940
-    second: SuaveSquire_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -182,10 +176,10 @@ TextureImporter:
       name: SuaveSquire_0
       rect:
         serializedVersion: 2
-        x: 234
-        y: 2769
-        width: 1132
-        height: 1505
+        x: 183
+        y: 3873
+        width: 344
+        height: 457
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +198,10 @@ TextureImporter:
       name: SuaveSquire_1
       rect:
         serializedVersion: 2
-        x: 1676
-        y: 2764
-        width: 1164
-        height: 1589
+        x: 617
+        y: 3872
+        width: 354
+        height: 481
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +220,10 @@ TextureImporter:
       name: SuaveSquire_2
       rect:
         serializedVersion: 2
-        x: 2905
-        y: 2787
-        width: 1139
-        height: 1555
+        x: 988
+        y: 3879
+        width: 347
+        height: 469
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,9 +243,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 162
-        y: 1045
-        width: 1415
-        height: 1534
+        y: 3355
+        width: 429
+        height: 464
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,10 +264,10 @@ TextureImporter:
       name: SuaveSquire_5
       rect:
         serializedVersion: 2
-        x: 1771
-        y: 1077
-        width: 772
-        height: 1482
+        x: 648
+        y: 3362
+        width: 233
+        height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,13 +283,35 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: SuaveSquire_6
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 3369
+        width: 332
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005f5924730ffb660800000000000000
+      internalID: 7403900432551376128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: SuaveSquire_7
       rect:
         serializedVersion: 2
-        x: 3018
-        y: 1095
-        width: 1091
-        height: 1499
+        x: 1403
+        y: 3640
+        width: 261
+        height: 481
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,33 +326,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: SuaveSquire_8
-      rect:
-        serializedVersion: 2
-        x: 4284
-        y: 1996
-        width: 857
-        height: 1584
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d4aee4a3fdbaf0480800000000000000
-      internalID: -8930730560808097203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c41ac35d30a592049851153ee0d86e7a
+    spriteID: d0d7ed32764119f4dad4207e5ea3f801
     internalID: 0
     vertices: []
     indices: 
@@ -354,8 +348,6 @@ TextureImporter:
       SuaveSquire_5: 6963108349718571926
       SuaveSquire_6: 7403900432551376128
       SuaveSquire_7: 1278030526854345831
-      SuaveSquire_8: -8930730560808097203
-      SuaveSquire_9: -1340140259311912940
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

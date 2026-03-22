@@ -164,10 +164,10 @@ TextureImporter:
       name: ShadowEnemy_0
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 2322
-        width: 993
-        height: 1238
+        x: 1172
+        y: 3098
+        width: 372
+        height: 462
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,10 +186,10 @@ TextureImporter:
       name: ShadowEnemy_1
       rect:
         serializedVersion: 2
-        x: 2665
-        y: 2318
-        width: 981
-        height: 1095
+        x: 1706
+        y: 3096
+        width: 367
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,9 +209,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1139
-        y: 908
-        width: 1272
-        height: 1079
+        y: 2572
+        width: 475
+        height: 404
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +230,10 @@ TextureImporter:
       name: ShadowEnemy_3
       rect:
         serializedVersion: 2
-        x: 2675
-        y: 885
-        width: 1155
-        height: 941
+        x: 1710
+        y: 2564
+        width: 431
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
