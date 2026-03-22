@@ -86,8 +86,6 @@ public class GameLoop : MonoBehaviour
 
     int lvlComplete;
 
-    bool lose;
-    bool itemUsed;
     bool displayPrinted;
 
     List<Item> starterSet;
@@ -107,7 +105,6 @@ public class GameLoop : MonoBehaviour
         displayText.text = "";
 
         lvlComplete = 0;
-        lose = false;
         displayPrinted = false;
 
         // Hardcoded starter set of items
@@ -147,7 +144,6 @@ public class GameLoop : MonoBehaviour
                 knightSprite.sprite = knightIdle;
                 squireSprite.sprite = squireIdle;
 
-                itemUsed = false;
                 if(!displayPrinted && displayText.text == "")
                 {
                     displayText.text = currentEvent.Description + "\n\n" + menuPrompt;
@@ -227,7 +223,6 @@ public class GameLoop : MonoBehaviour
                     {
                         displayText.text = "You used " + currentItem.Name + "\n\n";
                         inventory.RemoveItem(currentItem);
-                        itemUsed = true;
                         state = State.Results;
                     }
                     input.text = "";
@@ -251,7 +246,7 @@ public class GameLoop : MonoBehaviour
                             squireSprite.sprite = squireAttack;
                             knightSprite.sprite = knightAttack;
                         }
-                        else if (currentItem.Block < currentItem.Magic)
+                        else if (currentItem.Block > currentItem.Magic)
                         {
                             squireSprite.sprite = squireBlock;
                             knightSprite.sprite = knightBlock;
@@ -276,8 +271,12 @@ public class GameLoop : MonoBehaviour
                     }
                     else
                     {
-                        displayText.text += "GAME OVER\n\nEncounters Completed: " + lvlComplete;
+                        displayText.text += "GAME OVER\n\nEncounters Completed: " + lvlComplete + "\n\nType anything to restart...";
                         displayPrinted = true;
+
+                        currentItem = new Item("null", 0, 0, 0);
+                        inventory = new Inventory(starterSet);
+                        lvlComplete = 0;
 
                         knightSprite.sprite = knightDefeated;
                         squireSprite.sprite = squireDefeated;
